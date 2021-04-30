@@ -1,0 +1,10 @@
+pages
+
+1. homepage
+    -skills
+    -experience
+    -portfolio
+    -education
+    -contact
+
+color scheme -

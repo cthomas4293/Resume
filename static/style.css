@@ -1,0 +1,81 @@
+body {
+    background: #FCFCFC;
+    color: white;
+}
+
+#Wrapper {
+    /*Page Decor*/
+    background: #a2a2a1;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+
+    /*Outline*/
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*Text*/
+
+}
+
+/*Header*/
+.header {
+    /*Outline*/
+    box-shadow: -1px 1px 30px -20px gray;
+}
+
+.main--header {
+    background: white;
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    box-sizing: border-box;
+    /*justify-content: space-between;*/
+
+
+    padding-left: 1rem;
+}
+
+/*Nav*/
+.nav {
+    /*Outline*/
+    padding-left: 4rem;
+
+    display: flex;
+    align-items: center;
+
+    /*Text*/
+    font-size: 1.1rem;
+}
+
+.main--nav a {
+    /*Outline*/
+    color: black;
+    padding: 1.4rem;
+    border-right: #f6f2f2 solid 2px;
+
+    text-decoration: none;
+}
+
+.main--nav a:last-child {
+    border-right: white;
+}
+
+.main--title {
+    color: black;
+}
+
+/*Main Content*/
+.main--content {
+    /*Outline*/
+
+}
+
+/*Footer*/
+footer {
+    /*Outline*/
+
+}

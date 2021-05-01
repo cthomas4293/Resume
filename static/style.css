@@ -1,4 +1,6 @@
 body {
+    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
     background: #FCFCFC;
     color: white;
 }
@@ -64,14 +66,62 @@ body {
     border-right: white;
 }
 
+
+/*Main Content*/
 .main--title {
     color: black;
 }
 
-/*Main Content*/
+.section--skills {
+    background: #832e09;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section--skills h3 {
+    width: 33.33%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--skills h3:nth-child(4) {
+    width: 50%;
+}
+
+.section--skills h3:last-child {
+    width: 50%;
+}
+
 .main--content {
     /*Outline*/
+    width: 100%;
 
+}
+
+.section h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin: 0;
+}
+
+#skill--section-headers {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ;
 }
 
 /*Footer*/

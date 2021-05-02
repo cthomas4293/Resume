@@ -68,9 +68,35 @@ body {
 
 
 /*Main Content*/
+
+.main--content {
+    /*Outline*/
+    width: 100%;
+
+}
+
 .main--title {
     color: black;
 }
+
+.section h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin: 0;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ;
+}
+
+/*Skills Content*/
 
 .skill {
     display: flex;
@@ -99,14 +125,6 @@ body {
     position: relative;
 }
 
-/*.section--skills h3 {*/
-/*    width: 33.33%;*/
-/*    font-size: 0.8rem;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
 .skill--four {
     width: 50%;
 }
@@ -115,28 +133,9 @@ body {
     width: 50%;
 }
 
-.main--content {
-    /*Outline*/
-    width: 100%;
-
-}
-
-.section h1 {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    padding-top: 50px;
-    margin: 0;
-}
+/*Education Content*/
 
 
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    ;
-}
 
 /*Footer*/
 footer {

@@ -165,7 +165,7 @@ body {
 .timeline ul {
     margin: 0;
     padding: 0;
-
+    color: black;
 }
 
 .timeline ul li {
@@ -221,6 +221,7 @@ body {
     padding: 0;
     font-weight: 600;
     color: rgba(233,33,99,0.2);
+    color: black;
 }
 
 .timeline ul li p {
@@ -256,6 +257,50 @@ body {
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+}
+
+/*Portfolio*/
+
+.section--portfolio h1 {
+    background: #636361;
+}
+
+.portfolio--container {
+    padding-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /*border: solid black 2px;*/
+    /*background: coral;*/
+}
+
+.apps img {
+    border: solid black 2px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+}
+
+/*Experience*/
+
+.section--experience {
+    box-shadow: -1px 1px 30px -20px gray;
+    background: #e0dfdf;
+    color: black;
 }
 
 /*Footer*/

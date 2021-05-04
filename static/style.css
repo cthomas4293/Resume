@@ -303,6 +303,87 @@ body {
     color: black;
 }
 
+.section--experience h1 {
+    background: #FCFCFC;
+    box-shadow: -1px 1px 30px -20px gray;
+}
+
+.exp--sub-section {
+    display: flex;
+    padding: 50px 30px 50px 30px;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exp--headers {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp--headers .job--description {
+    margin: 0;
+    float: right;
+    width: 75%;
+}
+
+.exp--headers h2 {
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+
+.exp--info {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp--content {
+    display: flex;
+    padding-top: 40px;
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+.exp--content-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.exp--content-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.exp--content ul {
+    width: 50%;
+}
+
+.exp--content h4 {
+    padding-left: 40px;
+    font-size: 1.2rem;
+}
+
+.job-list li:before {
+    content:"\00bb";
+    padding-right: 10px;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.job-list {
+    list-style: none;
+    line-height: 3rem;
+}
+
 /*Footer*/
 footer {
     /*Outline*/

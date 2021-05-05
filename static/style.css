@@ -6,14 +6,13 @@ body {
     font-family: 'Poppins', sans-serif;
     /*font-family: 'Roboto Condensed', sans-serif;*/
     background: #FCFCFC;
-    color: white;
 }
 
 #Wrapper {
     /*Page Decor*/
     background: #a2a2a1;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 2%;
 
     /*Outline*/
@@ -84,12 +83,14 @@ body {
 }
 
 .section h1 {
-    font-size: 2rem;
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    align-items: center;
     margin: 0;
+    height: 150px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 3rem;
 }
 
 
@@ -266,33 +267,15 @@ body {
 }
 
 .portfolio--container {
-    padding-top: 20px;
-    margin-bottom: 100px;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    height: 150px;
+    flex-wrap: wrap;
+    height: 400px;
     width: 100%;
 }
 
-.apps {
-    display: flex;
-    justify-content: center;
-    width: 75%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    /*border: solid black 2px;*/
-    /*background: coral;*/
-}
-
-.apps img {
-    border: solid black 2px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 20%;
-    height: 100%;
+.portfolio--container img {
+    width: 25%;
+    height: 50%;
 }
 
 /*Experience*/
@@ -300,7 +283,6 @@ body {
 .section--experience {
     box-shadow: -1px 1px 30px -20px gray;
     background: #e0dfdf;
-    color: black;
 }
 
 .section--experience h1 {
@@ -351,16 +333,13 @@ body {
 }
 
 .exp--content-1 {
-    width: 50%;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    width: 50%;
 }
 
 .exp--content-2 {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    width: 50%;
 }
 
 .exp--content ul {
@@ -368,8 +347,21 @@ body {
 }
 
 .exp--content h4 {
+    display: flex;
+    justify-content: right;
     padding-left: 40px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.job-list {
+    list-style: none;
+    line-height: 3rem;
+}
+
+.job-list li {
+    font-weight: bold;
+    color: black;
 }
 
 .job-list li:before {
@@ -379,10 +371,6 @@ body {
     font-size: 28px;
 }
 
-.job-list {
-    list-style: none;
-    line-height: 3rem;
-}
 
 /*Footer*/
 footer {

@@ -98,7 +98,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    ;
 }
 
 /*Skills Content*/
@@ -375,9 +374,56 @@ body {
     font-size: 28px;
 }
 
+/*Contact*/
+
+.section--contact {
+    margin: 70px 50px 70px 50px;
+    flex-direction: row;
+}
+
+.section--contact header {
+    width: 200px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#form--contact {
+    display: flex;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0;
+}
+
+#subject {
+    flex: 100%;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+#name, #email {
+    flex: 50%;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+#message {
+    flex: 100%;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: black!important;
+}
+
 
 /*Footer*/
 footer {
     /*Outline*/
-
+    color: white;
+    height: 100px;
+    width: 100%;
+    background: #832e09;
 }

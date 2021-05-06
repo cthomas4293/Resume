@@ -328,8 +328,8 @@ body {
 .exp--content {
     display: flex;
     padding-top: 40px;
-    flex-grow: 1;
     font-size: 1rem;
+    text-align: right;
 }
 
 .exp--content-1 {
@@ -342,29 +342,33 @@ body {
     width: 50%;
 }
 
-.exp--content ul {
-    width: 50%;
+.exp--content-1 h4 {
+    padding-right: 130px;
+}
+
+.exp--content-2 h4 {
+    padding-right: 170px;
 }
 
 .exp--content h4 {
-    display: flex;
-    justify-content: right;
     padding-left: 40px;
     font-size: 1.5rem;
     font-weight: bolder;
 }
 
 .job-list {
-    list-style: none;
-    line-height: 3rem;
+    display: flex;
+    padding-right: 180px;
+    flex-direction: column;
 }
 
-.job-list li {
+.job-list a {
     font-weight: bold;
     color: black;
+    text-decoration: none;
 }
 
-.job-list li:before {
+.job-list a:before {
     content:"\00bb";
     padding-right: 10px;
     font-weight: bolder;

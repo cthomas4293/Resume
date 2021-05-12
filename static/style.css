@@ -101,14 +101,15 @@ body {
 .section--skills {
     box-sizing: border-box;
     position: relative;
-    background: #797983;
+    background: #b8b0a9;
 }
 
 #skill--section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 300px;
+    margin-bottom: 50px;
+    height: 200px;
 }
 
 .section--skills h1 {
@@ -119,6 +120,7 @@ body {
     display: flex;
     flex-basis: 50%;
     flex-direction: column;
+    height: 70px;
     align-items: flex-start;
     padding-left: 160px;
 }
@@ -137,8 +139,7 @@ body {
 .loading--blocks p {
     margin: 0;
     width: 50px;
-    height: 100%;
-    color: white;
+    height: 50%;
     background: white;
     opacity: 5%;
     border-radius: 25%;
@@ -172,8 +173,10 @@ body {
 
 /*Education Content*/
 .section--education h1 {
-    padding-top: 100px;
+    padding-top: 0;
     padding-bottom: 0;
+    background: #4c5c83;
+    color: white;
 }
 
 /*timeline*/
@@ -182,7 +185,6 @@ body {
     position: relative;
     margin: 50px auto;
     width: 1000px;
-    padding: 40px 0;
     box-sizing: border-box;
 }
 
@@ -205,7 +207,7 @@ body {
     list-style: none;
     position: relative;
     width: 50%;
-    padding: 20px 40px;
+    padding: 0 40px 120px 40px;
     box-sizing: border-box;
 }
 
@@ -221,32 +223,39 @@ body {
     clear: both;
 }
 
-.content {
+.content h3{
+    font-weight: bold;
     padding-bottom: 20px;
+}
+
+.content p{
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed darkgray;
 }
 
 .timeline ul li:nth-child(odd):before {
     content: '';
     position: absolute;
-    top: 24px;
+    top: 32px;
     right: -6px;
     width: 10px;
     height: 10px;
-    background: rgb(83, 134, 12);
+    background: rgb(21, 48, 168);
     border-radius: 50%;
-    box-shadow:  0 0 0 3px rgba(91, 215, 65, 0.2);
+    box-shadow:  0 0 0 3px rgba(41, 69, 191, 0.2);
 }
 
 .timeline ul li:nth-child(even):before {
     content: '';
     position: absolute;
-    top: 24px;
+    top: 32px;
     left: -4px;
     width: 10px;
     height: 10px;
-    background: rgb(83, 134, 12);
+    background: rgb(21, 48, 168);
     border-radius: 50%;
-    box-shadow:  0 0 0 3px rgba(91, 215, 65, 0.2);
+    box-shadow:  0 0 0 3px rgba(41, 69, 191, 0.2);
 }
 
 .timeline ul li h3 {
@@ -270,26 +279,26 @@ body {
 
 .timeline ul li:nth-child(odd) .time {
     position: absolute;
-    top: 12px;
+    top: 20px;
     right: -165px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(83, 134, 12,0.2);
+    background: rgba(21, 48, 168,0.2);
     color: black;
-    border-radius: 18px;
-    box-shadow:  0 0 0 3px rgba(91, 215, 65, 0.2);
+    border-radius: 5px;
+    box-shadow:  0 0 0 3px rgba(41, 69, 191, 0.2);
 }
 
 .timeline ul li:nth-child(even) .time {
     position: absolute;
-    top: 12px;
+    top: 20px;
     left: -165px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(83, 134, 12,0.2);
+    background: rgba(21, 48, 168,0.2);
     color: black;
-    border-radius: 18px;
-    box-shadow:  0 0 0 3px rgba(91, 215, 65, 0.2);
+    border-radius: 5px;
+    box-shadow:  0 0 0 3px rgba(41, 69, 191, 0.2);
 }
 
 /*Portfolio*/
@@ -316,6 +325,7 @@ body {
 }
 
 .section--experience h1 {
+    padding-top: 0;
 }
 
 .exp--sub-section {
@@ -337,6 +347,8 @@ body {
 }
 
 .exp--headers .job--description {
+    color: black;
+    font-weight: bold;
     margin: 0;
     float: right;
     width: 75%;
@@ -406,11 +418,13 @@ body {
 /*Contact*/
 
 .section--contact {
-    margin: 70px 50px 70px 50px;
+    background: #6a7d57;
+    padding: 70px 50px 70px 50px;
     flex-direction: row;
 }
 
 .section--contact header {
+    margin-right: 30px;
     width: 200px;
     font-size: 2rem;
     font-weight: bolder;
@@ -424,24 +438,40 @@ body {
     margin: 0;
 }
 
+#form--contact input {
+    border: solid 2px lightgray;
+    box-sizing: border-box;
+    /*box-shadow: -1px 1px 5px black;*/
+    padding: 15px;
+}
+
+#form--contact textarea {
+    border: solid 2px lightgray;
+    padding: 15px;
+}
+
 #subject {
     flex: 100%;
     margin-bottom: 10px;
-    font-size: 1.1rem;
-    padding: 5px;
+    font-size: 0.8rem;
 }
 
 #name, #email {
-    flex: 50%;
+    flex: 47%;
     margin-bottom: 10px;
-    font-size: 1.1rem;
+    margin-right: 21px;
+    font-size: 0.8rem;
     padding: 5px;
+}
+
+#email {
+    margin-right: 0;
 }
 
 #message {
     flex: 100%;
     margin-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     padding: 5px;
 }
 ::-webkit-input-placeholder {
@@ -451,17 +481,22 @@ body {
 }
 
 #submit--button {
+    border: none !important;
     background: black;
     color: white;
     width: 200px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /*Footer*/
 footer {
+    display: flex;
+    align-items: center;
     /*Outline*/
-    color: black;
+    background: #797983;
+    color: white;
+    font-size: 0.9rem;
     height: 100px;
     width: 100%;
 }

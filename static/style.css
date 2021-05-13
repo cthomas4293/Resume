@@ -27,25 +27,23 @@ body {
 /*Header*/
 
 .main--header {
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
     box-shadow: -1px 1px 30px -20px gray;
     background: white;
     width: 100%;
-    display: flex;
-
-    flex-direction: row;
+    height: 100%;
     box-sizing: border-box;
-    /*justify-content: space-between;*/
-
-
-    padding-left: 1rem;
 }
 
 /*Nav*/
 
-.nav {
+.main--nav {
     /*Outline*/
     padding-left: 4rem;
-
+    height: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
 
@@ -55,11 +53,14 @@ body {
 }
 
 .main--nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
     /*Outline*/
     color: black;
     padding: 1.4rem;
     border-right: #f6f2f2 solid 2px;
-
     text-decoration: none;
 }
 
@@ -77,6 +78,11 @@ body {
 }
 
 .main--title {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     color: black;
 }
 
@@ -99,6 +105,8 @@ body {
 
 /*Skills Content*/
 .section--skills {
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     position: relative;
     background: #b8b0a9;
@@ -109,18 +117,19 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    height: 200px;
+    height: 100%;
+    width: 100%;
 }
 
 .section--skills h1 {
-    padding-top: 100px;
+    padding: 10px 0 0 0;
 }
 
 .skill {
     display: flex;
     flex-basis: 50%;
     flex-direction: column;
-    height: 70px;
+    height: 50%;
     align-items: flex-start;
     padding-left: 160px;
 }
@@ -139,9 +148,9 @@ body {
 .loading--blocks p {
     margin: 0;
     width: 50px;
-    height: 50%;
+    height: 15px;
     background: white;
-    opacity: 5%;
+    opacity: 10%;
     border-radius: 25%;
     border: 3px solid black;
 }
@@ -176,7 +185,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     background: #4c5c83;
-    color: white;
+    color: black;
 }
 
 /*timeline*/
@@ -184,7 +193,7 @@ body {
 .timeline {
     position: relative;
     margin: 50px auto;
-    width: 1000px;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -229,6 +238,7 @@ body {
 }
 
 .content p{
+    font-size: 1rem;
     font-weight: bold;
     padding-bottom: 20px;
     border-bottom: 2px dashed darkgray;
@@ -326,6 +336,7 @@ body {
 
 .section--experience h1 {
     padding-top: 0;
+    background: #f1f0f0;
 }
 
 .exp--sub-section {
@@ -402,13 +413,13 @@ body {
     flex-direction: column;
 }
 
-.job-list a {
+.job-list p {
     font-weight: bold;
     color: black;
     text-decoration: none;
 }
 
-.job-list a:before {
+.job-list p:before {
     content:"\00bb";
     padding-right: 10px;
     font-weight: bolder;
@@ -418,9 +429,10 @@ body {
 /*Contact*/
 
 .section--contact {
+    flex-direction: row;
+    margin-top: 50px;
     background: #6a7d57;
     padding: 70px 50px 70px 50px;
-    flex-direction: row;
 }
 
 .section--contact header {
@@ -491,12 +503,18 @@ body {
 
 /*Footer*/
 footer {
+    border-top: 2px solid #727272;
     display: flex;
     align-items: center;
     /*Outline*/
     background: #797983;
     color: white;
     font-size: 0.9rem;
+    font-weight: bold;
     height: 100px;
     width: 100%;
+}
+
+.footer--header {
+    padding-left: 30px;
 }

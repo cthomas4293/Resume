@@ -35,12 +35,21 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  padding: 1rem 0 1rem 0;
+  padding: 3.5rem 0 3.5rem 0;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.section--skills {
+  /* background-color: burlywood; */
+  /* background-color: #dbc596; */
+  background-color: #f3f3f3;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 0 30px 0;
 }
 
 .skills p {
@@ -51,6 +60,9 @@ body {
 }
 
 /* Education */
+.education-header {
+  background-color: #dbc596;
+}
 
 .timeline {
   position: relative;
@@ -103,7 +115,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   padding-bottom: 20px;
-  border-bottom: 2px dashed darkgray;
+  /* border-bottom: 2px dashed darkgray; */
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -113,7 +125,7 @@ body {
   right: -6px;
   width: 10px;
   height: 10px;
-  background: rgb(21, 48, 168);
+  background: black;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(41, 69, 191, 0.2);
 }
@@ -125,7 +137,7 @@ body {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: rgb(21, 48, 168);
+  background: black;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(41, 69, 191, 0.2);
 }
@@ -155,10 +167,10 @@ body {
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: rgba(21, 48, 168, 0.2);
-  color: black;
+  background: rgb(235, 235, 235);
+  color: darkgray;
   border-radius: 5px;
-  box-shadow: 0 0 0 3px rgba(41, 69, 191, 0.2);
+  /* box-shadow: 0 0 0 3px lightgray; */
 }
 
 .timeline ul li:nth-child(even) .time {
@@ -167,35 +179,78 @@ body {
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: rgba(21, 48, 168, 0.2);
-  color: black;
+  background: rgb(235, 235, 235);
+  color: darkgray;
   border-radius: 5px;
-  box-shadow: 0 0 0 3px rgba(41, 69, 191, 0.2);
+  /* box-shadow: 0 0 0 3px lightgray; */
 }
 
 /* Experience */
 
-/* .exp {
-  display: flex;
+.section--experience {
+  padding: 0 !important;
+}
+
+.experience-header {
+  background-color: #505050;
+  color: white;
+}
+
+.exp {
+  padding: 50px 0 50px 0;
 }
 
 .exp--one-sidebar {
-  flex-basis: 25%;
+  padding-left: 30px;
 }
 
-.exp--one-main {
+.exp--one-sidebar h3 {
+  font-weight: lighter;
+}
+
+.exp--one-sidebar p {
+  font-weight: bolder;
+}
+
+.exp--description {
+  font-size: 1.1rem;
+}
+
+.exp--responsibilities,
+.exp--experience {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-.exp--one-description {
-  width: 100%;
+.exp--responsibilities h6,
+.exp--experience h6 {
+  padding-bottom: 10px;
+  padding-right: 20px;
 }
 
-.exp--one-experience,
-.exp--one-responsibilities {
-  width: 50%;
-} */
+.exp--responsibilities p,
+.exp--experience p {
+  border-bottom: dashed lightgray 1px;
+  margin-left: 20px;
+}
+
+.exp--responsibilities h6 {
+  padding-right: 20px;
+}
 
 /* Contact */
+
+.contact-container {
+  background-color: rgb(105, 134, 105);
+}
+
+/* Footer  */
+
+.section--footer {
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  background-color: #626262;
+  height: 90px;
+}

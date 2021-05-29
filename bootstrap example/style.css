@@ -13,8 +13,9 @@ body {
   padding: 0;
 }
 
-.navbar {
+.main-navbar {
   background-color: white;
+  height: 90px;
 }
 
 .navbar-brand {
@@ -23,11 +24,30 @@ body {
 }
 
 .nav-item {
+  font-size: 1em;
   padding: 0 2em 0 2em;
   border-right: rgb(243, 243, 243) 1px solid;
 }
 .nav-item:nth-child(5) {
   border-right: none;
+}
+
+/* .sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 5.5rem;
+  transition-duration: 2s;
+} */
+
+#navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 3.3rem;
+  position: fixed;
+  top: -150px;
+  transition-duration: 0.6s;
 }
 
 /* Main Content */

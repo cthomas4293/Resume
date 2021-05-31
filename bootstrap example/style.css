@@ -218,6 +218,7 @@ body {
 
 .exp {
   padding: 50px 0 50px 0;
+  transition: transform 1s, opacity 2s;
 }
 
 .exp--one-sidebar {
@@ -257,6 +258,11 @@ body {
 
 .exp--responsibilities h6 {
   padding-right: 20px;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateX(100px);
 }
 
 /* Contact */

@@ -11,6 +11,10 @@
 
 const navbar = document.querySelector(".main-navbar");
 const stickyNavbar = document.querySelector("#navbar");
+const expContent = document.querySelector(".Wrapper--experience");
+
+const sections = document.querySelectorAll(".exp");
+sections.forEach((element) => element.classList.add("section--hidden"));
 
 // const initialCoords = navbar.getBoundingClientRect();
 
@@ -27,7 +31,7 @@ const stickyNavbar = document.querySelector("#navbar");
 //   }
 // });
 
-// Intersection Observer API
+// Sticky Nav
 const obsCallback = function (entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting == false) {
@@ -47,3 +51,23 @@ const obsOptions = {
 const observer = new IntersectionObserver(obsCallback, obsOptions);
 
 observer.observe(navbar);
+
+// Reveal Sections
+
+const sectionReveal = function (entries) {
+  const [entry] = entries;
+  // console.log(entry);
+  // console.log(entry.target);
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(sectionReveal, {
+  root: null,
+  threshold: 0.2,
+});
+
+sections.forEach((element) => sectionObserver.observe(element));

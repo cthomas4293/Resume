@@ -1,11 +1,12 @@
 "use strict";
 
-const navbar = document.querySelector(".main-navbar");
-const stickyNavbar = document.querySelector("#navbar");
+const navbar = document.querySelector("#navbar");
+const stickyNavbar = document.querySelector("#secondary--navbar");
+const mainNavbar = document.querySelector("#navbar");
 const expContent = document.querySelector(".Wrapper--experience");
 
-const sections = document.querySelectorAll(".exp");
-sections.forEach((element) => element.classList.add("section--hidden"));
+const expSections = document.querySelectorAll(".exp");
+expSections.forEach((element) => element.classList.add("section--hidden"));
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Sticky Nav
@@ -39,7 +40,6 @@ const sectionReveal = function (entries, observer) {
   if (!entry.isIntersecting) return;
 
   entry.target.classList.remove("section--hidden");
-  console.log("observe");
   observer.unobserve(entry.target);
 };
 
@@ -48,4 +48,38 @@ const sectionObserver = new IntersectionObserver(sectionReveal, {
   threshold: 0.2,
 });
 
-sections.forEach((element) => sectionObserver.observe(element));
+expSections.forEach((element) => sectionObserver.observe(element));
+
+// Smooth Scroll
+const sections = document.querySelectorAll("section");
+
+const mainLinks = mainNavbar.querySelectorAll(".nav-link");
+const stickyLinks = stickyNavbar.querySelectorAll(".nav-link");
+
+mainLinks.forEach((link) =>
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (e.target.classList[1].startsWith("skill")) {
+      window.scrollTo({
+        top: sections[0].getBoundingClientRect().top,
+        behavior: "smooth",
+      });
+    } else if (e.target.classList[1].startsWith("edu")) {
+      window.scrollTo({
+        top: sections[1].getBoundingClientRect().top,
+        behavior: "smooth",
+      });
+    } else if (e.target.classList[1].startsWith("exp")) {
+      window.scrollTo({
+        top: sections[2].getBoundingClientRect().top,
+        behavior: "smooth",
+      });
+    } else if (e.target.classList[1].startsWith("con")) {
+      window.scrollTo({
+        top: sections[3].getBoundingClientRect().top,
+        behavior: "smooth",
+      });
+    }
+  })
+);

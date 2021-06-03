@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 body {
   margin: 0;
@@ -42,7 +46,7 @@ body {
   transition-duration: 2s;
 } */
 
-#navbar {
+#secondary--navbar {
   background-color: rgba(255, 255, 255, 0.8);
   padding-left: 3.3rem;
   position: fixed;
@@ -51,6 +55,13 @@ body {
 }
 
 /* Main Content */
+
+section:before {
+  content: "";
+  display: block;
+  height: 75px;
+  margin: -100px 0 0;
+}
 
 .header {
   display: flex;

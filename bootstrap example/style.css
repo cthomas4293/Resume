@@ -36,16 +36,6 @@ body {
   border-right: none;
 }
 
-/* .sticky {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding-left: 5.5rem;
-  transition-duration: 2s;
-} */
-
 #secondary--navbar {
   background-color: rgba(255, 255, 255, 0.8);
   padding-left: 3.3rem;
@@ -109,7 +99,7 @@ section:before {
   box-sizing: border-box;
 }
 
-.timeline:before {
+.timeline::before {
   content: "";
   position: absolute;
   left: 50%;

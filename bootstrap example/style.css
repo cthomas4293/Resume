@@ -63,6 +63,13 @@ section:before {
   margin: -100px 0 0;
 }
 
+.section--skills::before {
+  content: "";
+  display: block;
+  height: 75px;
+  margin: -90px 0 0;
+}
+
 .header {
   display: flex;
   justify-content: center;

@@ -250,18 +250,18 @@ section:before {
 .exp--experience {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .exp--responsibilities h6,
 .exp--experience h6 {
+  margin-left: 20px;
   padding-bottom: 10px;
   padding-right: 20px;
 }
 
 .exp--responsibilities p,
 .exp--experience p {
-  border-bottom: dashed lightgray 1px;
   margin-left: 20px;
 }
 

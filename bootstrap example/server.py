@@ -12,10 +12,6 @@ cnx = mysql.connector.connect(
 )
 
 mycursor = cnx.cursor()
-mycursor.execute(f"SHOW DATABASES;")
-my_data = mycursor.fetchall()
-print(my_data)
-cnx.close()
 
 
 @app.route("/", methods=['POST', 'GET'])
@@ -23,8 +19,14 @@ cnx.close()
 def index():
     if request.method == 'POST':
         data = request.form.to_dict()
-        print('helo')
-        print(data)
+        name = data['full-name']
+        email = data['user-email']
+        subject = data['message-subject']
+        message = data['user-message']
+        mycursor.execute(f"INSERT INTO Contacts (CustomerName, CustomerEmail, CustomerSubject, CustomerMessage)"
+        "VALUES (%s, %s, %s, %s)", (name, email, subject, message))
+        cnx.commit()
+        cnx.close()
         return render_template('index.html')
     else:
         return render_template('index.html')

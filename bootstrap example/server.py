@@ -20,7 +20,7 @@ with sshtunnel.SSHTunnelForwarder(
         ssh_username='cthomas4293',
         ssh_password='Tiger6034+',
         remote_bind_address=(
-        'cthomas4293.mysql.pythonanywhere-services.com', 3306)) as tunnel:
+        'cthomas4293.mysql.pythonanywhere-services.com', 22)) as tunnel:
     connection = mysql.connector.connect(
         user='cthomas4293', password='Tiger6034+',
         host='127.0.0.1', port=tunnel.local_bind_port,
